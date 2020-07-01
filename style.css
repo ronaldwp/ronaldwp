@@ -1,70 +1,164 @@
 :root {
-	--main-font: 'Quicksand', sans-serif;
-	--sec-font: 'Roboto Thin', sans-serif;
-	--main-color: #ffb442;
-	--sec-color: #d5ded5;
-}
-
-html {
-	margin: 0;
-	padding: 0;
+	--font: 'Roboto', sans-serif;
+	--bg-color: #0f1012;
+	--main-color: #eb135b;
+	--text-color: #f2f2f3;
 }
 
 body {
-	background: #000;
-	color: #fff;
-	font-family: var(--main-font);
-	margin: 0;
-	padding: 0;
+	background: var(--bg-color);
+	color: var(--text-color);
+	font-family: var(--font);
+	letter-spacing: 2px;
 }
 
-/*nav*/
-/*nav {
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	padding: 0 20px;
+/*-----navbar-----*/
+.navbar {
+	background: var(--bg-color);
+	padding: 1rem 5rem;
 }
 
-.logo-nav-items {
-	height: 50px;
-	width: 50px;
-	background: url("img/Logo.png") no-repeat center center;
-	background-size: cover;
-	margin: 10px auto 10px 10px;
-	padding: 10px;
+@media (max-width: 768px) {
+	.navbar {
+		padding: 1rem;
+	}
 }
 
-.container-nav-items > ul {
-	list-style: none;
-	display: flex;
-}
-
-.nav-item { 
-	margin: .5em;
-}
-
-.nav-item > a {
-	color: var(--sec-color);
-	text-decoration: none;
-	text-transform: lowercase;
-}
-
-.nav-item > a:hover {
+/*brand name*/
+.navbar-brand {
 	color: var(--main-color);
-}*/
+}
 
-/*@media only screen and (max-width: 700px) {
-	.container-nav-items {
-		display: none;
+.navbar-brand:hover {
+	color: var(--main-color);
+}
+
+/*toggler style*/
+.navbar-toggler {
+	border: none;
+}
+
+.navbar-toggler-icon {
+	background-image: url("img/Toggler.svg")
+}
+
+/*nav lish style*/
+.nav-item {
+	padding-right: 2rem;
+}
+
+/*link style*/
+.nav-link {
+	color: var(--text-color);
+	font-weight: lighter;
+}
+
+.nav-link:hover {
+	color: var(--main-color);
+}
+/*--------------*/
+/*landing*/
+.section {
+	height: 70vh;
+}
+
+.mycontainer {
+	height: 100%;
+}
+
+.textBox {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.right-align {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.imgBox {
+	background-image: url(img/portrait.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+	.imgBox {
+		order: 0;
+		background-position: center;
+		height: 50%;
 	}
 
-	.logo-nav-items {
-		margin: 0 auto;
-		height: 5rem;
-		width: 5rem;
+	.textBox {
+		order: 1;
+		align-items: center;
+		text-align: center;
 	}
-}*/
-/*--------------------------*/
+}
 
-/*Landing*/
+/*text style*/
+.mainText {
+	font-size: 1.5rem;
+	letter-spacing: 1px;
+	font-weight: lighter;
+	font-family: var(--font);
+}
+
+.hilightText {
+	font-size: 2.3rem;
+	letter-spacing: 2px;
+	color: var(--main-color);
+}
+
+/*button*/
+.btn {
+	border: 1px solid var(--main-color);
+	border-radius: 0;
+	padding: .5rem 1rem;
+	width: 50%;
+}
+
+.btn > a {
+	font-weight: lighter;
+	letter-spacing: 1px;
+	color: var(--main-color);
+}
+
+/*button hover*/
+.btn > a:hover {
+	color: var(--bg-color);
+	text-decoration: none;
+}
+
+.btn:hover {
+	background: var(--main-color);
+}
+/*----------------------*/
+/*work*/
+
+.textTwo {
+	padding-top: 5rem;
+	text-align: center;
+}
+
+.iconBox {
+	height: 240px;
+	width: 240px;
+	border: 1px solid var(--main-color);
+	margin: 10px;
+}
+
+@media (max-width: 768px) {
+	.iconBox {
+		margin: 10px auto;
+	}
+}
+
+
+.mycontainerTwo {
+	max-width: 740px;
+}
