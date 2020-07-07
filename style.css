@@ -175,20 +175,21 @@ body {
 	/*text-transform: lowercase;*/
 }
 
-.iconBox:hover {
-
-}
-
 @media (max-width: 768px) {
 	.iconBox {
 		margin: 10px auto;
 	}
 }
 
-
 /*the div with iconboxes*/
 .mycontainerTwo {
 	max-width: 740px;
+}
+
+.btn-center {
+	display: block;
+	margin: 10px auto;
+	width: 10rem;
 }
 
 /*----------------*/
