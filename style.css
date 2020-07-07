@@ -147,7 +147,7 @@ body {
 /*----------------------*/
 /*work*/
 /*paragraph*/
-.textTwo {
+.textTwo, .textThree {
 	padding-top: 5rem;
 	text-align: center;
 }
@@ -192,8 +192,19 @@ body {
 	width: 10rem;
 }
 
+.hidden {
+	visibility: hidden;
+}
+
 /*----------------*/
 /*footer*/
+
 .footer {
-	height: 30vh;
+	margin-top: 3rem;
+}
+
+.footerText {
+	font-size: .7rem;
+	font-family: var(--font);
+	text-align: center;
 }
