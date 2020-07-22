@@ -17,7 +17,6 @@ function checkWidth() {
 // hide call me btn if the user is on windows
 let agent = navigator.userAgent;
 if(agent.includes('Windows')){
-	console.log("on Windows")
 	phoneBtn.classList.add('hidden');
 } else {
 	console.log(agent)
